@@ -15,3 +15,10 @@ deploy:
   local_dir: build
   on:
     branch: main
+
+notifications:
+  email:
+    if: type = cron
+    recipients:
+      - abdulhathi@gmail.com
+    on_success: always
